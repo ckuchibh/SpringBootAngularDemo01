@@ -54,6 +54,18 @@ This is the application architecture we will build:
 - Spring Boot exports REST Apis using Spring Web MVC & interacts with MySQL Database using Spring Data JPA.
 - Angular Client sends HTTP Requests and retrieve HTTP Responses using axios, shows data on the components. We also use Angular Router for navigating to pages.
 
+### To setup MySQL database:
+
+* Download and install MySQL-community-installer from the following [link](https://dev.mysql.com/downloads/windows/installer/8.0.html)
+* Follow the steps in the **SQL Installation** document included in this ZIP file.
+* Note: Remember your MySQL credentials that you set during installation.
+* Once MySQL is completely installed, it is ready to be used by Spring Boot.
+* In Spring Boot, in the **application.properties** file, you will include:
+    * MySQL Driver (default is `com.mysql.cj.jdbc.Driver`)
+    * Database URL (default is `localhost:3306`)
+    * Default database to use (should be created on MySQL)
+    * DB username and password (set during installation)
+
 ### To setup Spring Boot project:
 
 * Open Eclipse IDE and import the **spring-boot-server** folder
